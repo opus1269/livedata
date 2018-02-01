@@ -33,6 +33,6 @@ public class MainViewModel extends AndroidViewModel {
         super(application);
 
         text = new MutableLiveData<>();
-        text.setValue("Two-way binding text");
+        text.setValue("All should change");
     }
 }
