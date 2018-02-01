@@ -16,35 +16,23 @@
  *
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+package opus1269.weebly.com.livedata;
 
-ext {
-    archVersion = '1.0.0'
-    lifeCycleVersion = '1.1.0'
-}
+import android.app.Application;
+import android.arch.lifecycle.AndroidViewModel;
+import android.arch.lifecycle.MutableLiveData;
+import android.support.annotation.NonNull;
 
-buildscript {
-    
-    repositories {
-        google()
-        jcenter()
+/**
+ * TODO: Add description.
+ */
+public class MainViewModel extends AndroidViewModel {
+    public MutableLiveData<String> text;
+
+    public MainViewModel(@NonNull Application application) {
+        super(application);
+
+        text = new MutableLiveData<>();
+        text.setValue("Two-way binding text");
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.0-beta1'
-        
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
 }
