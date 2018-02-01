@@ -29,9 +29,6 @@
             name="vm"
             type="opus1269.weebly.com.livedata.MainViewModel"/>
 
-        <variable
-            name="text"
-            type="android.arch.lifecycle.MutableLiveData&lt;String&gt;"/>
     </data>
 
     <android.support.design.widget.CoordinatorLayout
