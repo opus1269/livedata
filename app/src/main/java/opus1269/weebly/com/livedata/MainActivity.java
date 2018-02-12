@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         binding.setVm(viewModel);
         binding.executePendingBindings();
 
-        // Inspection says inspectionProblem param is always null but not true
+        // Inspection says param is always null but not true
         viewModel.text.observe(this, this::inspectionProblem);
         inspectionProblem(null);
 
